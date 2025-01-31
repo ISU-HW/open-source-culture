@@ -6,8 +6,6 @@ app = FastAPI()
 def read_root():
     return {"message": "Hello, World!"}
 
-from fastapi import Query
-
 @app.get("/items")
 def get_items():
     return {
